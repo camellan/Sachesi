@@ -4,7 +4,7 @@ TARGET="Sachesi"
 win32: RC_ICONS += assets/sachesi.ico
 else:mac: ICON = assets/sachesi.icns
 else: ICON = assets/sachesi.png
-VERSION = 2.0.3
+VERSION = 2.0.4
 
 # Global specific
 CONFIG += c++11
@@ -15,9 +15,7 @@ win32 {
     SOURCES += $$P/ext/zlib-win/*.c
     HEADERS += $$P/ext/zlib-win/*.h
     INCLUDEPATH += ext/zlib-win
-}
 
-win32 {
     # Where is your OpenSSL Install? Hardcoded for Win32
     OPENSSL_PATH = C:\\OpenSSL
     INCLUDEPATH += $$OPENSSL_PATH\\include
